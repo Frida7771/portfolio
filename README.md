@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-🔗 **Live Demo**: [frida-li.com](https://frida-li.com)
+🔗 **Live Demo**: [frida-li.com](https://www.frida-li.com/)
 
 ![Demo](./public/demo.jpg)
 
@@ -13,7 +13,6 @@ A modern, responsive personal portfolio website built with Next.js, TypeScript, 
 - 📱 **Fully Responsive** - mobile-first design
 - 🖼️ **Image Lightbox** - click to view project screenshots
 - ✨ **Smooth Animations** - scroll-based reveal effects
-- 🔤 **Google Fonts** - Outfit + JetBrains Mono via `next/font`
 - 🚀 **Optimized Performance** - 95+ Lighthouse score
 
 ## Tech Stack
@@ -39,23 +38,6 @@ npm run build
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── globals.css     # Global styles + Tailwind
-│   ├── layout.tsx      # Root layout with fonts & SEO
-│   └── page.tsx        # Home page
-└── components/
-    ├── Navbar.tsx      # Navigation with mobile menu
-    ├── Hero.tsx        # Hero section with typing effect
-    ├── About.tsx       # About me + tech stack
-    ├── Projects.tsx    # Project showcase with lightbox
-    ├── Experience.tsx  # Work experience timeline
-    ├── Contact.tsx     # Contact links
-    └── Footer.tsx      # Footer
-```
 
 ## Deployment
 
