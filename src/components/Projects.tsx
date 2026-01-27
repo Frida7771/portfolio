@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Cloud Disk',
+    title: 'Cloud Dist',
     description:
       'A cloud storage platform for secure file upload, sharing, and subscription-based storage. Supports resumable uploads, deduplication, and fine-grained access control.',
     tech: ['Go', 'AWS S3', 'MySQL', 'React', 'Stripe'],
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: 'PyVoice',
     description:
-      'An offline bilingual ASR/TTS system supporting real-time speech-to-text and synthesis. Features optimized audio processing pipelines and WebSocket-based streaming.',
+      'An offline Chinese ASR/TTS system supporting real-time speech-to-text and synthesis. Features optimized audio processing pipelines and WebSocket-based streaming.',
     tech: ['Python', 'FastAPI', 'ONNX', 'Paraformer', 'MeloTTS'],
     image: '/PyVoice.jpg',
     github: 'https://github.com/Frida7771/PyVoice',
