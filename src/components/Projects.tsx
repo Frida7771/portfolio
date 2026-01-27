@@ -97,79 +97,88 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
+        {/* Section Title */}
         <h2 className="text-4xl font-bold mb-16 flex items-center gap-4">
           <span className="font-mono text-cyan-400 font-normal">//</span>
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Projects List */}
+        <div className="space-y-24">
           {projects.map((project, index) => (
             <article
               key={project.title}
-              className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-white/5 overflow-hidden hover:border-cyan-400/30 hover:-translate-y-1 transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="grid lg:grid-cols-2 gap-8 items-center"
             >
-              {/* Image Area */}
-              <div
-                className="relative h-48 overflow-hidden border-b border-white/5 cursor-pointer"
-                onClick={() =>
-                  setSelectedImage({ src: project.image, title: project.title })
-                }
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
-                {/* Zoom icon overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
-                  <FiZoomIn className="w-8 h-8 text-white" />
+              {/* Image */}
+              <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                <div
+                  className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group shadow-lg shadow-black/30"
+                  onClick={() =>
+                    setSelectedImage({ src: project.image, title: project.title })
+                  }
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
+                    <FiZoomIn className="w-8 h-8 text-white" />
+                  </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <div className="flex gap-3">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-500 hover:text-cyan-400 transition-colors"
-                        aria-label="GitHub"
-                      >
-                        <FiGithub className="w-5 h-5" />
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-500 hover:text-cyan-400 transition-colors"
-                        aria-label="Live Demo"
-                      >
-                        <FiExternalLink className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                </div>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+              <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                <span className="font-mono text-cyan-400 text-sm mb-2 block">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+
+                {/* Tech */}
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="font-mono text-xs text-cyan-400/80"
+                      className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-md border border-cyan-400/20"
                     >
                       {tech}
                     </span>
                   ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-3">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm rounded-lg transition-colors"
+                    >
+                      <FiGithub className="w-4 h-4" />
+                      Code
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-violet-500 text-slate-900 font-medium text-sm rounded-lg"
+                    >
+                      <FiExternalLink className="w-4 h-4" />
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
@@ -177,27 +186,21 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
           onClick={() => setSelectedImage(null)}
         >
-          {/* Close button */}
           <button
-            className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors z-10"
+            className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors"
             onClick={() => setSelectedImage(null)}
-            aria-label="Close"
           >
             <FiX className="w-8 h-8" />
           </button>
-
-          {/* Title */}
           <h3 className="absolute top-6 left-6 text-xl font-semibold text-white">
             {selectedImage.title}
           </h3>
-
-          {/* Image container */}
           <div
             className="relative max-w-5xl max-h-[85vh] w-full h-full"
             onClick={(e) => e.stopPropagation()}
