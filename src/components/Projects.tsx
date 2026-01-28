@@ -15,6 +15,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Yahoo Finance LLM Agent',
+    description:
+      'A LLM-powered agent for Yahoo Finance, supporting stock information retrieval, SEC document search, and API response generation.',
+    tech: ['Python', 'LangChain', 'OpenAI', 'Yahoo Finance API', 'SEC API'],
+    image: '/yahoo-finance-llm-agent.jpg',
+    github: 'https://github.com/Frida7771/yahoo-finance-agent',
+  },
+  {
     title: 'Cloud Dist',
     description:
       'A cloud storage platform for secure file upload, sharing, and subscription-based storage. Supports resumable uploads, deduplication, and fine-grained access control.',
