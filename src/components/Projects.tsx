@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: 'Health Manager',
     description:
       'A full-stack health monitoring platform for logging and analyzing personal health metrics. Features trend visualization, goal tracking, and personalized health-news recommendations.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+    tech: ['React', 'Java', 'Spring Boot', 'MySQL'],
     image: '/healthmanager.jpg',
     github: 'https://github.com/Frida7771/HealthManager',
   },
