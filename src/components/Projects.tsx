@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Yahoo Finance LLM Agent',
+    title: 'Financial Research Copilot ',
     description:
       'A LLM-powered agent for Yahoo Finance, supporting stock information retrieval, SEC document search, and API response generation.',
     tech: ['Python', 'LangChain', 'OpenAI', 'Yahoo Finance API', 'SEC API'],
