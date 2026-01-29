@@ -19,7 +19,7 @@ const projects: Project[] = [
     description:
       'A LLM-powered agent for Yahoo Finance, supporting stock information retrieval, SEC document search, and API response generation.',
     tech: ['Python', 'LangChain', 'OpenAI', 'Yahoo Finance API', 'SEC API'],
-    image: '/finance.jpg',
+    image: '/financepage.jpg',
     github: 'https://github.com/Frida7771/yahoo-finance-agent',
   },
   {
