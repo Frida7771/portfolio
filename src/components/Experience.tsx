@@ -6,16 +6,6 @@ interface ExperienceItem {
 }
 
 const experiences: ExperienceItem[] = [
-    {
-        title: 'Founding Engineer',
-        company: 'LeetReviewer',
-        period: 'Nov 2025 - Present',
-        highlights: [
-          'Built a spaced repetition system for LeetCode problems using the FSRS algorithm.',
-          'Implemented user authentication, problem management, and review scheduling.',
-          'Deployed the application on AWS EC2, using PM2 to manage the application.',
-        ],
-      },  
   {
     title: 'Software Engineer Intern',
     company: 'China Mobile',
