@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     'Full stack developer portfolio showcasing web development, AI applications, and cloud solutions.',
   keywords: ['Full Stack Developer', 'React', 'Go', 'Python', 'AI', 'Portfolio'],
   authors: [{ name: 'Frida' }],
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: 'Frida | Full Stack Developer',
     description: 'Full stack developer portfolio',
