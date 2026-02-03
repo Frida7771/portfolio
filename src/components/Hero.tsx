@@ -70,7 +70,7 @@ export default function Hero() {
           Hi, I&apos;m
         </p>
         <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent tracking-tight mb-4">
-          Frida
+          Bo (Frida)
         </h1>
         <div className="flex items-center justify-center gap-1 mb-6">
           <span className="font-mono text-xl md:text-2xl text-slate-400">
