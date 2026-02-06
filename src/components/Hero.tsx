@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const titles = [
-  'Full Stack Developer',
+  'Software Developer',
   'Problem Solver',
   'Tech Enthusiast',
   'Open Source Contributor',
