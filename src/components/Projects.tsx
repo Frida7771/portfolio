@@ -55,6 +55,14 @@ const projects: Project[] = [
     github: 'https://github.com/Frida7771/PyVoice',
   },
   {
+    title: 'Gomoku AI',
+    description:
+      'An intelligent Gomoku (Five in a Row) game with AI opponent. Features multiple difficulty levels powered by Minimax algorithm with Alpha-Beta pruning optimization.',
+    tech: ['C#', 'Algorithm', 'Minimax', 'ASP.NET'],
+    image: '/GomokuAI.jpg',
+    github: 'https://github.com/Frida7771/GomokuAI',
+  },
+  {
     title: 'LeetCode Review',
     description:
       'An algorithm practice review tool supporting Blind 75, Hot 100, and NeetCode 150 problem sets. Features smart review reminders based on spaced-repetition scheduling.',

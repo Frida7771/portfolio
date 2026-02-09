@@ -31,7 +31,7 @@ export default function About() {
           <div className="space-y-6 text-slate-400 leading-relaxed">
             <p className="text-xl text-white">
               I&apos;m a passionate{' '}
-              <span className="text-cyan-400">Full Stack Developer</span> with
+              <span className="text-cyan-400">Software Developer</span> with
               extensive experience in web application development. I love turning
               ideas into reality, building digital products that are both
               beautiful and functional.
