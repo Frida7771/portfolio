@@ -16,7 +16,7 @@ const experiences: ExperienceItem[] = [
     location: 'Jinan, China',
     period: 'Jan 2024 - Aug 2024',
     description:
-      'Designed and scaled an LLM-powered telecom customer service system with RAG, function calling, and distributed session management, handling 5,000+ RPM and increasing intelligent routing accuracy from 30% to 45%.',
+      'Designed and scaled an LLM-powered telecom customer service system with RAG, function calling, and distributed session management, handling 200+QPS and increasing intelligent routing accuracy.',
     tech: ['LLM', 'RAG', 'Distributed Systems', 'Function Calling'],
   },
   {
