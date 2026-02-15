@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const titles = [
   'Software Developer',
@@ -43,68 +44,63 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 -z-10">
-        {/* Grid */}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px)
-            `,
-            backgroundSize: '60px 60px',
-            maskImage:
-              'radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%)',
-            WebkitMaskImage:
-              'radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%)',
-          }}
-        />
-        {/* Glows */}
-        <div className="absolute -top-48 -right-24 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px]" />
-        <div className="absolute -bottom-36 -left-24 w-[500px] h-[500px] bg-violet-500/10 rounded-full blur-[100px]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 to-white">
       </div>
 
       {/* Content */}
-      <div className="text-center px-6 animate-fade-in">
-        <p className="font-mono text-cyan-400 text-lg mb-3 tracking-wide">
-          Hi, I&apos;m
-        </p>
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent tracking-tight mb-4">
-          Bo (Frida)
-        </h1>
-        <div className="flex items-center justify-center gap-1 mb-6">
-          <span className="font-mono text-xl md:text-2xl text-slate-400">
-            {displayText}
-          </span>
-          <span className="w-0.5 h-6 bg-cyan-400 animate-blink" />
-        </div>
-        <p className="text-lg text-slate-400 max-w-md mx-auto mb-10 leading-relaxed">
-          Passionate about building elegant and efficient digital products.
-          <br />
-          Focused on Web Development, AI Applications & Cloud Solutions.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="#projects"
-            className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-violet-500 text-slate-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-0.5 transition-all"
-          >
-            View Projects
-          </Link>
-          <Link
-            href="#contact"
-            className="px-8 py-4 border border-white/15 text-white font-medium rounded-xl hover:bg-white/5 hover:border-white/25 transition-all"
-          >
-            Contact Me
-          </Link>
-        </div>
-      </div>
+      <div className="max-w-6xl mx-auto px-6 animate-fade-in">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+          {/* Left - Text */}
+          <div className="flex-1 text-center lg:text-left">
+            <p className="font-mono text-slate-500 text-lg mb-3 tracking-wide">
+              Hi, I&apos;m
+            </p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-800 tracking-tight mb-4">
+              Bo (Frida)
+            </h1>
+            <div className="flex items-center justify-center lg:justify-start gap-1 mb-6">
+              <span className="font-mono text-xl md:text-2xl text-slate-500">
+                {displayText}
+              </span>
+              <span className="w-0.5 h-6 bg-slate-800 animate-blink" />
+            </div>
+            <p className="text-lg text-slate-600 max-w-md mx-auto lg:mx-0 mb-10 leading-relaxed">
+              Passionate about building elegant and efficient digital products.
+              <br />
+              Focused on Web Development, AI Applications & Cloud Solutions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                href="#projects"
+                className="px-8 py-4 bg-slate-800 text-white font-semibold rounded-xl hover:bg-slate-700 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+              >
+                View Projects
+              </Link>
+              <Link
+                href="#contact"
+                className="px-8 py-4 border border-slate-300 text-slate-700 font-medium rounded-xl hover:bg-slate-50 hover:border-slate-400 transition-all"
+              >
+                Contact Me
+              </Link>
+            </div>
+          </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-slate-500 text-sm animate-fade-in animation-delay-1000">
-        <div className="w-6 h-10 border-2 border-slate-500 rounded-full flex justify-center pt-2">
-          <div className="w-1 h-2 bg-cyan-400 rounded-full animate-scroll" />
+          {/* Right - Profile Photo */}
+          <div className="flex-shrink-0">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl">
+                <Image
+                  src="/Bo.jpg"
+                  alt="Bo (Frida)"
+                  fill
+                  className="object-cover object-center"
+                  style={{ objectPosition: 'center 30%' }}
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <span>Scroll Down</span>
       </div>
     </section>
   );

@@ -111,11 +111,11 @@ export default function Projects() {
   } | null>(null);
 
   return (
-    <section id="projects" className="py-24 md:py-32">
+    <section id="projects" className="py-24 md:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4">
-          <span className="font-mono text-cyan-400 font-normal">//</span>
+        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4 text-slate-800">
+          <span className="font-mono text-slate-400 font-normal">//</span>
           Projects
         </h2>
 
@@ -149,13 +149,13 @@ export default function Projects() {
 
               {/* Content */}
               <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                <span className="font-mono text-cyan-400 text-sm mb-2 block">
+                <span className="font-mono text-slate-400 text-sm mb-2 block">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3">
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-slate-800">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-slate-600 leading-relaxed mb-4">
                   {project.description}
                 </p>
 
@@ -164,7 +164,7 @@ export default function Projects() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-md border border-cyan-400/20"
+                      className="px-3 py-1 bg-slate-100 text-slate-600 text-sm rounded-md border border-slate-200"
                     >
                       {tech}
                     </span>
@@ -178,7 +178,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm rounded-lg transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm rounded-lg transition-colors"
                     >
                       <FiGithub className="w-4 h-4" />
                       Code
@@ -189,7 +189,7 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-violet-500 text-slate-900 font-medium text-sm rounded-lg"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-800 text-white font-medium text-sm rounded-lg hover:bg-slate-700 transition-colors"
                     >
                       <FiExternalLink className="w-4 h-4" />
                       Demo
@@ -205,7 +205,7 @@ export default function Projects() {
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 backdrop-blur-sm p-4"
           onClick={() => setSelectedImage(null)}
         >
           <button

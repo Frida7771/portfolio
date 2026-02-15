@@ -32,11 +32,11 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-32 bg-slate-800/50">
+    <section id="experience" className="py-24 md:py-32 bg-slate-50">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4">
-          <span className="font-mono text-cyan-400 font-normal">//</span>
+        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4 text-slate-800">
+          <span className="font-mono text-slate-400 font-normal">//</span>
           Experience
         </h2>
 
@@ -45,10 +45,10 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={exp.company}
-              className="group relative bg-slate-900/60 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-cyan-400/30 transition-all duration-300 overflow-hidden"
+              className="group relative bg-white rounded-2xl border border-slate-200 hover:border-slate-400 transition-all duration-300 overflow-hidden shadow-sm"
             >
               {/* Accent Line */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-cyan-400 to-violet-500" />
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-slate-800" />
 
               <div className="p-6 md:p-8 pl-8 md:pl-10">
                 {/* Header Row */}
@@ -56,34 +56,34 @@ export default function Experience() {
                   {/* Company & Role */}
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="font-mono text-cyan-400 text-sm">
+                      <span className="font-mono text-slate-400 text-sm">
                         {String(index + 1).padStart(2, '0')}
                       </span>
-                      <h3 className="text-xl md:text-2xl font-bold group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-xl md:text-2xl font-bold text-slate-800 group-hover:text-slate-600 transition-colors">
                         {exp.company}
                       </h3>
                     </div>
-                    <div className="flex items-center gap-2 text-slate-300">
-                      <FiBriefcase className="w-4 h-4 text-violet-400" />
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <FiBriefcase className="w-4 h-4 text-slate-500" />
                       <span className="font-medium">{exp.role}</span>
                     </div>
                   </div>
 
                   {/* Meta Info */}
-                  <div className="flex flex-wrap md:flex-col md:items-end gap-2 text-sm text-slate-400">
-                    <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-800 rounded-full">
-                      <FiCalendar className="w-3.5 h-3.5 text-cyan-400" />
+                  <div className="flex flex-wrap md:flex-col md:items-end gap-2 text-sm text-slate-500">
+                    <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-100 rounded-full">
+                      <FiCalendar className="w-3.5 h-3.5 text-slate-500" />
                       {exp.period}
                     </span>
-                    <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-800 rounded-full">
-                      <FiMapPin className="w-3.5 h-3.5 text-violet-400" />
+                    <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-100 rounded-full">
+                      <FiMapPin className="w-3.5 h-3.5 text-slate-500" />
                       {exp.location}
                     </span>
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-400 leading-relaxed mb-5">
+                <p className="text-slate-600 leading-relaxed mb-5">
                   {exp.description}
                 </p>
 
@@ -92,7 +92,7 @@ export default function Experience() {
                   {exp.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-md border border-cyan-400/20"
+                      className="px-3 py-1 bg-slate-100 text-slate-600 text-sm rounded-md border border-slate-200"
                     >
                       {t}
                     </span>

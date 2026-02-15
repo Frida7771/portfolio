@@ -19,19 +19,19 @@ const skillCategories = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 bg-slate-800/50">
+    <section id="about" className="py-24 md:py-32 bg-slate-50">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4">
-          <span className="font-mono text-cyan-400 font-normal">//</span>
+        <h2 className="text-4xl font-bold mb-16 flex items-center gap-4 text-slate-800">
+          <span className="font-mono text-slate-400 font-normal">//</span>
           About Me
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Text */}
-          <div className="space-y-6 text-slate-400 leading-relaxed">
-            <p className="text-xl text-white">
+          <div className="space-y-6 text-slate-600 leading-relaxed">
+            <p className="text-xl text-slate-800">
               I&apos;m a passionate{' '}
-              <span className="text-cyan-400">Software Developer</span> with
+              <span className="font-semibold">Software Developer</span> with
               extensive experience in web application development. I love turning
               ideas into reality, building digital products that are both
               beautiful and functional.
@@ -51,19 +51,19 @@ export default function About() {
           </div>
 
           {/* Skills */}
-          <div className="bg-slate-900/60 backdrop-blur-sm p-8 rounded-2xl border border-white/5">
-            <h3 className="text-xl font-semibold mb-6">Tech Stack</h3>
+          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-semibold mb-6 text-slate-800">Tech Stack</h3>
             <div className="grid grid-cols-2 gap-6">
               {skillCategories.map((category) => (
                 <div key={category.title}>
-                  <h4 className="text-xs uppercase tracking-wider text-slate-500 mb-3">
+                  <h4 className="text-xs uppercase tracking-wider text-slate-400 mb-3">
                     {category.title}
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1.5 bg-slate-800 text-slate-300 text-sm rounded-md border border-white/5 hover:border-cyan-400/50 hover:text-cyan-400 transition-colors cursor-default"
+                        className="px-3 py-1.5 bg-slate-100 text-slate-600 text-sm rounded-md border border-slate-200 hover:border-slate-400 hover:text-slate-800 transition-colors cursor-default"
                       >
                         {skill}
                       </span>
