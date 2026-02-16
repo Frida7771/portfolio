@@ -15,17 +15,17 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Financial Research Copilot ',
+    title: 'QuantBrains ',
     description:
-      'A LLM-powered agent for Yahoo Finance, supporting stock information retrieval, SEC document search, and API response generation.',
-    tech: ['Python', 'LangChain', 'OpenAI', 'Yahoo Finance API', 'SEC API'],
+      'An LLM-powered financial analyst with advanced RAG and real-time stock quotes.',
+    tech: ['Python', 'LangGraph', 'OpenAI', 'WebSocket', 'FastAPI'],
     image: '/financepage.jpg',
     github: 'https://github.com/Frida7771/yahoo-finance-agent',
   },
   {
     title: 'Cloud Dist',
     description:
-      'A cloud storage platform for secure file upload, sharing, and subscription-based storage. Supports resumable uploads, deduplication, and fine-grained access control.',
+      'A cloud storage platform for secure file upload, sharing, and subscription-based storage.',
     tech: ['Go', 'AWS S3', 'MySQL', 'React', 'Stripe'],
     image: '/clouddist.jpg',
     github: 'https://github.com/frida7771/cloud-dist',
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     title: 'AtlasKB',
     description:
-      'A private LLM-powered knowledge base for document ingestion and knowledge reuse. Supports semantic search, conversational retrieval, and knowledge export.',
+      'Knowledge platform with RAG chat and Elasticsearch semantic search.',
     tech: ['Python', 'FastAPI', 'React', 'Elasticsearch', 'RAG'],
     image: '/atlaskb.jpg',
     github: 'https://github.com/Frida7771/AtlasKB',
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: 'AI Code Helper',
     description:
-      'An AI-powered code assistant supporting code explanation, optimization suggestions, and bug fixes. Built with Spring Boot + React, integrated with LLM model.',
+      'AI programming assistant with RAG and streaming chat using LangChain4j.',
     tech: ['Java', 'Spring Boot', 'React', 'OpenAI'],
     image: '/aicodehelper.jpg',
     github: 'https://github.com/Frida7771/ai-code-helper',
@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: 'PyVoice',
     description:
-      'An offline Chinese ASR/TTS system supporting real-time speech-to-text and synthesis. Features optimized audio processing pipelines and WebSocket-based streaming.',
+      'An offline Chinese/English ASR/TTS system supporting real-time speech-to-text and synthesis.',
     tech: ['Python', 'FastAPI', 'ONNX', 'Paraformer', 'MeloTTS'],
     image: '/PyVoice.jpg',
     github: 'https://github.com/Frida7771/PyVoice',
@@ -57,47 +57,39 @@ const projects: Project[] = [
   {
     title: 'Gomoku AI',
     description:
-      'An intelligent Gomoku (Five in a Row) game with AI opponent. Features multiple difficulty levels powered by Minimax algorithm with Alpha-Beta pruning optimization.',
+      'Gomoku game with AI using Minimax and Alpha-Beta pruning.',
     tech: ['C#', 'Algorithm', 'Minimax', 'ASP.NET'],
     image: '/GomokuAI.jpg',
     github: 'https://github.com/Frida7771/GomokuAI',
   },
   {
-    title: 'LeetCode Review',
+    title: 'LeetReviewer',
     description:
-      'An algorithm practice review tool supporting Blind 75, Hot 100, and NeetCode 150 problem sets. Features smart review reminders based on spaced-repetition scheduling.',
-    tech: ['Node.js', 'JWT', 'OAuth', 'JavaScript', 'PostgreSQL', 'AWS EC2'],
+      'Algorithm practice review tool with spaced-repetition scheduling.',
+    tech: ['Node.js', 'JWT', 'OAuth', 'JavaScript', 'PostgreSQL', 'AWS EC2 RDS'],
     image: '/leetreviewer.jpg',
     demo: 'https://leetreviewer.com',
   },
   {
     title: 'Health Manager',
     description:
-      'A full-stack health monitoring platform for logging and analyzing personal health metrics. Features trend visualization, goal tracking, and personalized health-news recommendations.',
+      'Health tracking system with data visualization and smart evaluations.',
     tech: ['React', 'Java', 'Spring Boot', 'MySQL'],
     image: '/healthmanager.jpg',
     github: 'https://github.com/Frida7771/HealthManager',
   },
   {
-    title: 'Smart Home',
-    description:
-      'A smart home control system built with object-oriented design patterns. Supports modular device management through console and GUI interfaces.',
-    tech: ['Java', 'Design Pattern'],
-    image: '/smarthome.jpg',
-    github: 'https://github.com/Frida7771/SmartHome',
-  },
-  {
     title: 'FlavorLab',
     description:
-      'A recipe sharing web application designed for users with food allergies. Supports allergen filtering, recipe flagging, and responsive recipe management.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Typescript'],
+      'A recipe sharing web application designed for users with food allergies.',
+    tech: ['React', 'Node.js', 'MongoDB', 'MERN','Typescript'],
     image: '/flavorlab.jpg',
     github: 'https://github.com/Frida7771/AllergyAware_Recipes',
   },
   {
     title: 'Chinese Chess',
     description:
-      'A classic Chinese Chess (Xiangqi) game with AI opponent. Features multiple difficulty levels, move hints, and game replay functionality.',
+      'Chinese Chess (Xiangqi) game with AI opponent.',
     tech: ['Java', 'Algorithm', 'Minimax', 'Alpha-Beta'],
     image: '/Chinesechess.jpg',
     github: 'https://github.com/Frida7771/ChineseChess',

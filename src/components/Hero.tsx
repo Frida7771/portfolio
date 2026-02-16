@@ -67,7 +67,7 @@ export default function Hero() {
             <p className="text-lg text-slate-600 max-w-md mx-auto lg:mx-0 mb-10 leading-relaxed">
               Passionate about building elegant and efficient digital products.
               <br />
-              Focused on Web Development, AI Applications & Cloud Solutions.
+              Focused on Full Stack Development, AI Applications & Cloud Solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link

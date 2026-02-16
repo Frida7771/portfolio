@@ -1,7 +1,7 @@
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['React', 'Vue', 'TypeScript', 'Tailwind'],
+    skills: ['React', 'Vue', 'TypeScript', 'JavaScript'],
   },
   {
     title: 'Backend',
@@ -9,11 +9,11 @@ const skillCategories = [
   },
   {
     title: 'Database & Tools',
-    skills: ['MySQL', 'MongoDB', 'Redis', 'Docker'],
+    skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'Elasticsearch'],
   },
   {
     title: 'AI & Cloud',
-    skills: ['OpenAI', 'RAG', 'AWS', 'K8s'],
+    skills: ['OpenAI', 'RAG', 'AWS', 'Docker'],
   },
 ];
 
@@ -31,8 +31,7 @@ export default function About() {
           <div className="space-y-6 text-slate-600 leading-relaxed">
             <p className="text-xl text-slate-800">
               I&apos;m a passionate{' '}
-              <span className="font-semibold">Software Developer</span> with
-              extensive experience in web application development. I love turning
+              <span className="font-semibold">Software Developer</span> I love turning
               ideas into reality, building digital products that are both
               beautiful and functional.
             </p>
@@ -43,10 +42,7 @@ export default function About() {
               AI integration.
             </p>
             <p>
-              In my free time, I enjoy exploring new technologies, solving
-              LeetCode problems to sharpen my algorithm skills, and contributing
-              to open source projects. I believe continuous learning is key to
-              staying technically sharp.
+              In my free time, I enjoy exploring new technologies and solving LeetCode problems. I also enjoy playing the piano and running, which help me stay disciplined and focused.
             </p>
           </div>
 
