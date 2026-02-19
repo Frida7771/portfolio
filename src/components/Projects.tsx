@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'QuantBrains ',
+    title: 'Finance Agent ',
     description:
       'An LLM-powered financial analyst with advanced RAG and real-time stock quotes.',
     tech: ['Python', 'LangGraph', 'OpenAI', 'WebSocket', 'FastAPI'],
@@ -23,7 +23,7 @@ const projects: Project[] = [
     github: 'https://github.com/Frida7771/yahoo-finance-agent',
   },
   {
-    title: 'Cloud Dist',
+    title: 'Cloud Storage',
     description:
       'A cloud storage platform for secure file upload, sharing, and subscription-based storage.',
     tech: ['Go', 'AWS S3', 'MySQL', 'React', 'Stripe'],
@@ -31,7 +31,7 @@ const projects: Project[] = [
     github: 'https://github.com/frida7771/cloud-dist',
   },
   {
-    title: 'AtlasKB',
+    title: 'Knowledge Base',
     description:
       'Knowledge platform with RAG chat and Elasticsearch semantic search.',
     tech: ['Python', 'FastAPI', 'React', 'Elasticsearch', 'RAG'],
@@ -47,7 +47,7 @@ const projects: Project[] = [
     github: 'https://github.com/Frida7771/ai-code-helper',
   },
   {
-    title: 'PyVoice',
+    title: 'Voice Assistant',
     description:
       'An offline Chinese/English ASR/TTS system supporting real-time speech-to-text and synthesis.',
     tech: ['Python', 'FastAPI', 'ONNX', 'Paraformer', 'MeloTTS'],
@@ -71,7 +71,7 @@ const projects: Project[] = [
     demo: 'https://leetreviewer.com',
   },
   {
-    title: 'Health Manager',
+    title: 'Health Tracker',
     description:
       'Health tracking system with data visualization and smart evaluations.',
     tech: ['React', 'Java', 'Spring Boot', 'MySQL'],
@@ -79,20 +79,12 @@ const projects: Project[] = [
     github: 'https://github.com/Frida7771/HealthManager',
   },
   {
-    title: 'FlavorLab',
+    title: 'Allergy Aware Recipes',
     description:
       'A recipe sharing web application designed for users with food allergies.',
     tech: ['React', 'Node.js', 'MongoDB', 'MERN','Typescript'],
     image: '/flavorlab.jpg',
     github: 'https://github.com/Frida7771/AllergyAware_Recipes',
-  },
-  {
-    title: 'Chinese Chess',
-    description:
-      'Chinese Chess (Xiangqi) game with AI opponent.',
-    tech: ['Java', 'Algorithm', 'Minimax', 'Alpha-Beta'],
-    image: '/Chinesechess.jpg',
-    github: 'https://github.com/Frida7771/ChineseChess',
   },
 ];
 
