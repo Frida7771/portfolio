@@ -11,6 +11,15 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    company: 'LeetReviewer',
+    role: 'Founding Software Engineer',
+    location: 'Boston, MA',
+    period: 'Oct 2025 - Present',
+    description:
+      'Built a production-grade spaced repetition system for LeetCode problems using Anki-style algorithm to optimize review scheduling.',
+    tech: ['Node.js', 'JWT', 'OAuth', 'JavaScript', 'PostgreSQL', 'AWS EC2 RDS'],
+  },
+  {
     company: 'China Mobile',
     role: 'Software Engineer Intern',
     location: 'Jinan, China',

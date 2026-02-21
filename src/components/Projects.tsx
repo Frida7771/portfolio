@@ -63,14 +63,6 @@ const projects: Project[] = [
     github: 'https://github.com/Frida7771/GomokuAI',
   },
   {
-    title: 'LeetReviewer',
-    description:
-      'Algorithm practice review tool with spaced-repetition scheduling.',
-    tech: ['Node.js', 'JWT', 'OAuth', 'JavaScript', 'PostgreSQL', 'AWS EC2 RDS'],
-    image: '/leetreviewer.jpg',
-    demo: 'https://leetreviewer.com',
-  },
-  {
     title: 'Health Tracker',
     description:
       'Health tracking system with data visualization and smart evaluations.',
