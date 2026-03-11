@@ -90,10 +90,10 @@ export default function Hero() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl">
                 <Image
-                  src="/Bo.jpg"
+                  src="/Frida.jpg"
                   alt="Bo (Frida)"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center scale-125"
                   style={{ objectPosition: 'center 30%' }}
                   priority
                 />
