@@ -93,7 +93,7 @@ export default function Hero() {
                   src="/Frida.jpg"
                   alt="Bo (Frida)"
                   fill
-                  className="object-cover object-center scale-125"
+                  className="object-cover object-center"
                   style={{ objectPosition: 'center 30%' }}
                   priority
                 />
